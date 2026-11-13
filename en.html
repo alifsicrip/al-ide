@@ -12,64 +12,65 @@
 <style>
 :root{--ft:'Ubuntu',sans-serif;--fb:'Ubuntu',sans-serif;--dark:#1d4e5b;--hero:#09637C;--light:#029aa3;--grey:#B5B7BB;--brown:#8b5e3c;--icon:#acb7c2;--violet:#6b526c;--bg:#123642}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--grey);font:400 1.08rem/1.85 var(--fb);letter-spacing:.05em;word-spacing:.16em}
-h1,h2,h3{font-family:var(--ft);line-height:1.2;margin:0 0 .6em}
-h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;color:#fff}
-h3{font-size:1.15rem;font-weight:600;color:#fff}
+html{scroll-behavior:smooth;scroll-padding-top:62px}
+body{margin:0;background:var(--bg);color:var(--grey);font:400 .98rem/1.65 var(--fb);letter-spacing:.05em;word-spacing:.16em}
+p{margin:0 0 .6em}
+h1,h2,h3{font-family:var(--ft);line-height:1.2;margin:0 0 .4em}
+h2{font-size:clamp(1.3rem,2.4vw,1.7rem);font-weight:600;color:#fff}
+h3{font-size:1rem;font-weight:600;color:#fff}
 a{color:#7fd6db}
 :focus-visible{outline:3px solid var(--light);outline-offset:3px}
-.wrap{max-width:1000px;margin:0 auto;padding:0 1.25rem}
+.wrap{max-width:1400px;margin:0 auto;padding:0 2rem}
 header.nav{position:sticky;top:0;z-index:10;background:#f5fafd;border-bottom:1px solid #dbe8ee}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px}
-.nav img{height:44px;display:block}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:54px}
+.nav img{height:38px;display:block}
 .nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
 .nav a{font:400 .95rem var(--ft);text-decoration:none;color:var(--dark)}
 .nav a:hover{color:var(--light)}
 .lang{font:600 .85rem var(--ft);text-decoration:none;color:var(--hero);border:2px solid var(--light);border-radius:999px;padding:.2rem .8rem}
 .lang:hover{background:var(--light);color:#fff}
 .hl{background:var(--brown);color:#fff;font-weight:700;font-size:1.12em;padding:.2em .55em;border-radius:8px;-webkit-box-decoration-break:clone;box-decoration-break:clone;line-height:2.2}
-.hero{background:var(--hero);color:#fff;padding:5rem 0 0;overflow:hidden}
-.about{display:grid;grid-template-columns:auto 1fr 1fr;gap:2.5rem;align-items:start}
-.photo{width:clamp(170px,22vw,230px);height:auto}
-.hero p{color:var(--grey);max-width:34em;font-size:1.25rem}
-.hero h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:700;margin-bottom:.3em}
-.hero .role{font:300 1.3rem var(--ft);color:#fff;margin:0 0 1.2rem}
-.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.8rem 0 3rem}
+.hero{background:var(--hero);color:#fff;padding:2.2rem 0 0;overflow:hidden}
+.about{display:grid;grid-template-columns:auto 1fr 1fr;gap:1.8rem;align-items:start}
+.photo{width:clamp(130px,14vw,170px);height:auto}
+.hero p{color:var(--grey);max-width:40em;font-size:1.1rem}
+.hero h1{font-size:clamp(2rem,5vw,3.2rem);font-weight:700;margin-bottom:.3em}
+.hero .role{font:300 1.1rem var(--ft);color:#fff;margin:0 0 1.2rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin:1rem 0 1.4rem}
 .btn{display:inline-block;font:600 1rem var(--ft);padding:.8rem 1.4rem;border-radius:999px;text-decoration:none;border:2px solid #fff;background:#fff;color:var(--hero);cursor:pointer}
 .btn:hover{background:var(--light);border-color:var(--light);color:#fff}
 .btn.solid{background:var(--hero);border-color:var(--light);color:#fff}
 .btn.solid:hover{background:var(--light);border-color:var(--light)}
 .btn.ghost{background:transparent;border-color:var(--grey);color:#fff}
 .btn.ghost:hover{border-color:#fff;background:#fff;color:var(--hero)}
-.ecg{display:block;width:100%;height:90px}
+.ecg{display:block;width:100%;height:55px}
 .ecg path{fill:none;stroke:#fff;stroke-width:3;stroke-linejoin:round;stroke-dasharray:2400;stroke-dashoffset:2400;animation:draw 3.2s ease-out .3s forwards}
 @keyframes draw{to{stroke-dashoffset:0}}
 @media (prefers-reduced-motion:reduce){.ecg path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
-section{padding:4.5rem 0}
+section{padding:2.4rem 0}
 section.alt{background:#1d4e5b}
-.two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1.8rem}
 .timeline{border-left:3px solid var(--light);padding-left:1.4rem;margin:0}
-.timeline article{margin-bottom:1.8rem;position:relative}
+.timeline article{margin-bottom:.9rem;position:relative}
 .timeline article::before{content:"";position:absolute;left:-1.95rem;top:.5rem;width:13px;height:13px;border-radius:50%;background:var(--light)}
 .timeline small{font:400 .85rem var(--ft);color:var(--grey)}
 .timeline p{margin:.2rem 0 0}
-.chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0;margin:0}
-.chips li{background:var(--bg);border:2px solid var(--light);color:#fff;border-radius:999px;padding:.25rem .9rem;font-size:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;list-style:none;padding:0;margin:0}
+.chips li{background:var(--bg);border:2px solid var(--light);color:#fff;border-radius:999px;padding:.12rem .7rem;font-size:.9rem}
 .chips.v li{border-color:#a98aaa}
-.cvs{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-.cv{display:flex;align-items:center;gap:1rem;background:var(--bg);border:2px solid var(--light);border-radius:14px;padding:1.2rem 1.4rem;text-decoration:none;color:#fff}
+.cvs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.8rem}
+.cv{display:flex;align-items:center;gap:1rem;background:var(--bg);border:2px solid var(--light);border-radius:14px;padding:.7rem 1rem;text-decoration:none;color:#fff}
 .cv:hover{border-color:#fff}
-.cv svg{flex:none;width:38px;height:38px;stroke:var(--icon);fill:none;stroke-width:1.6}
+.cv svg{flex:none;width:30px;height:30px;stroke:var(--icon);fill:none;stroke-width:1.6}
 .cv strong{font-family:var(--ft);display:block}
-form{display:grid;gap:1rem;max-width:620px}
+form{display:grid;gap:.6rem;max-width:760px}
 label{font:400 .95rem var(--ft);display:block;margin-bottom:.25rem}
 input,textarea{letter-spacing:inherit;width:100%;font:inherit;padding:.7rem .9rem;border:2px solid var(--icon);border-radius:10px;background:#0d2a33;color:#fff}
 input:focus,textarea:focus{border-color:var(--light)}
 .hp{position:absolute;left:-9999px}
-footer{background:#0d2a33;color:var(--grey);text-align:center;padding:2.2rem 1rem;font-size:.95rem}
+footer{background:#0d2a33;color:var(--grey);text-align:center;padding:1.1rem 1rem;font-size:.9rem}
 footer a{color:#fff}
-@media (max-width:700px){.photo{width:160px}.about,.two,.cvs{grid-template-columns:1fr}.nav ul{display:none}.hero{padding-top:3rem}}
+@media (max-width:700px){.photo{width:160px}.about,.two,.cvs{grid-template-columns:1fr}.nav ul{display:none}.hero{padding-top:1.2rem}}
 </style>
 </head>
 <body>
@@ -134,11 +135,11 @@ footer a{color:#fff}
   <div><h2>Skills</h2>
   <h3>Clinical skills</h3>
   <ul class="chips"><li>Care in stable and critical conditions</li><li>Multidisciplinary teamwork</li><li>Monitoring patients’ condition</li><li>Handoffs and care plans</li><li>Patient identification</li><li>Hygiene and posture</li><li>AFGSU 2</li></ul>
-  <h3 style="margin-top:1.8rem">Languages and tools</h3>
+  <h3 style="margin-top:1rem">Languages and tools</h3>
   <ul class="chips v"><li>English (fluent)</li><li>Jordanian Arabic (beginner)</li><li>Google Suite</li><li>Microsoft Office</li><li>Kanban</li><li>Canva</li><li>GitHub</li><li>AI</li></ul></div>
-  <div><h3 style="margin-top:3.2rem">Strengths</h3>
+  <div><h3 style="margin-top:2rem">Strengths</h3>
   <ul class="chips"><li>Active listening</li><li>Remain calm under pressure</li><li>Team spirit</li><li>Discretion and public service awareness</li></ul>
-  <h3 style="margin-top:1.8rem">Interests</h3>
+  <h3 style="margin-top:1rem">Interests</h3>
   <ul class="chips v"><li>Human and social sciences</li><li>Podcasts</li><li>Cinema</li><li>Traveling</li><li>New technologies</li></ul></div>
 </div></section>
 
@@ -181,7 +182,7 @@ footer a{color:#fff}
     <div><label for="nom">Name</label><input id="nom" name="nom" required autocomplete="name"></div>
     <div><label for="email">Email address</label><input id="email" type="email" name="email" required autocomplete="email"></div>
     <div><label for="sujet">Subject</label><input id="sujet" name="_subject" value="Message from my website"></div>
-    <div><label for="message">Message</label><textarea id="message" name="message" rows="6" required></textarea></div>
+    <div><label for="message">Message</label><textarea id="message" name="message" rows="4" required></textarea></div>
     <input class="hp" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
     <div><button class="btn solid" type="submit">Send message</button></div>
   </form>
