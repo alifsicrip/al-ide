@@ -10,17 +10,17 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
-:root{--ft:'Ubuntu',sans-serif;--fb:'Ubuntu',sans-serif;--dark:#1d4e5b;--hero:#09637C;--light:#029aa3;--grey:#B5B7BB;--brown:#8b5e3c;--icon:#acb7c2;--violet:#6b526c;--bg:#f5fafd}
+:root{--ft:'Ubuntu',sans-serif;--fb:'Ubuntu',sans-serif;--dark:#1d4e5b;--hero:#09637C;--light:#029aa3;--grey:#B5B7BB;--brown:#8b5e3c;--icon:#acb7c2;--violet:#6b526c;--bg:#123642}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--bg);color:var(--dark);font:400 1.08rem/1.85 var(--fb);letter-spacing:.05em;word-spacing:.16em}
+body{margin:0;background:var(--bg);color:var(--grey);font:400 1.08rem/1.85 var(--fb);letter-spacing:.05em;word-spacing:.16em}
 h1,h2,h3{font-family:var(--ft);line-height:1.2;margin:0 0 .6em}
-h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;color:var(--hero)}
-h3{font-size:1.15rem;font-weight:600;color:var(--dark)}
-a{color:var(--hero)}
+h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:600;color:#fff}
+h3{font-size:1.15rem;font-weight:600;color:#fff}
+a{color:#7fd6db}
 :focus-visible{outline:3px solid var(--light);outline-offset:3px}
 .wrap{max-width:1000px;margin:0 auto;padding:0 1.25rem}
-header.nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1px solid #dbe8ee}
+header.nav{position:sticky;top:0;z-index:10;background:#f5fafd;border-bottom:1px solid #dbe8ee}
 .nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:64px}
 .nav img{height:44px;display:block}
 .nav ul{display:flex;gap:1.4rem;list-style:none;margin:0;padding:0;flex-wrap:wrap}
@@ -28,17 +28,17 @@ header.nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1
 .nav a:hover{color:var(--light)}
 .lang{font:600 .85rem var(--ft);text-decoration:none;color:var(--hero);border:2px solid var(--light);border-radius:999px;padding:.2rem .8rem}
 .lang:hover{background:var(--light);color:#fff}
-.hl{background:var(--brown);color:#fff;font-weight:700;padding:0 .3em;border-radius:4px}
+.hl{background:var(--brown);color:#fff;font-weight:700;font-size:1.12em;padding:.2em .55em;border-radius:8px;-webkit-box-decoration-break:clone;box-decoration-break:clone;line-height:2.2}
 .hero{background:var(--hero);color:#fff;padding:5rem 0 0;overflow:hidden}
-.herogrid{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
-.photo{width:clamp(150px,24vw,230px);height:auto;margin-bottom:2rem}
+.about{display:grid;grid-template-columns:auto 1fr 1fr;gap:2.5rem;align-items:start}
+.photo{width:clamp(170px,22vw,230px);height:auto}
 .hero p{color:var(--grey);max-width:34em;font-size:1.25rem}
 .hero h1{font-size:clamp(2.4rem,7vw,4.6rem);font-weight:700;margin-bottom:.3em}
 .hero .role{font:300 1.3rem var(--ft);color:#fff;margin:0 0 1.2rem}
 .btns{display:flex;gap:.8rem;flex-wrap:wrap;margin:1.8rem 0 3rem}
 .btn{display:inline-block;font:600 1rem var(--ft);padding:.8rem 1.4rem;border-radius:999px;text-decoration:none;border:2px solid #fff;background:#fff;color:var(--hero);cursor:pointer}
 .btn:hover{background:var(--light);border-color:var(--light);color:#fff}
-.btn.solid{background:var(--dark);border-color:var(--dark);color:#fff}
+.btn.solid{background:var(--hero);border-color:var(--light);color:#fff}
 .btn.solid:hover{background:var(--light);border-color:var(--light)}
 .btn.ghost{background:transparent;border-color:var(--grey);color:#fff}
 .btn.ghost:hover{border-color:#fff;background:#fff;color:var(--hero)}
@@ -47,29 +47,29 @@ header.nav{position:sticky;top:0;z-index:10;background:var(--bg);border-bottom:1
 @keyframes draw{to{stroke-dashoffset:0}}
 @media (prefers-reduced-motion:reduce){.ecg path{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
 section{padding:4.5rem 0}
-section.alt{background:#fff}
+section.alt{background:#1d4e5b}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem}
 .timeline{border-left:3px solid var(--light);padding-left:1.4rem;margin:0}
 .timeline article{margin-bottom:1.8rem;position:relative}
-.timeline article::before{content:"";position:absolute;left:-1.95rem;top:.5rem;width:13px;height:13px;border-radius:50%;background:var(--dark)}
-.timeline small{font:400 .85rem var(--ft);color:var(--violet)}
+.timeline article::before{content:"";position:absolute;left:-1.95rem;top:.5rem;width:13px;height:13px;border-radius:50%;background:var(--light)}
+.timeline small{font:400 .85rem var(--ft);color:var(--grey)}
 .timeline p{margin:.2rem 0 0}
 .chips{display:flex;flex-wrap:wrap;gap:.6rem;list-style:none;padding:0;margin:0}
-.chips li{background:var(--bg);border:2px solid var(--light);color:var(--dark);border-radius:999px;padding:.25rem .9rem;font-size:1rem}
-.chips.v li{border-color:var(--violet)}
+.chips li{background:var(--bg);border:2px solid var(--light);color:#fff;border-radius:999px;padding:.25rem .9rem;font-size:1rem}
+.chips.v li{border-color:#a98aaa}
 .cvs{display:grid;grid-template-columns:1fr 1fr;gap:1.2rem}
-.cv{display:flex;align-items:center;gap:1rem;background:#fff;border:2px solid var(--light);border-radius:14px;padding:1.2rem 1.4rem;text-decoration:none;color:var(--dark)}
-.cv:hover{border-color:var(--dark)}
+.cv{display:flex;align-items:center;gap:1rem;background:var(--bg);border:2px solid var(--light);border-radius:14px;padding:1.2rem 1.4rem;text-decoration:none;color:#fff}
+.cv:hover{border-color:#fff}
 .cv svg{flex:none;width:38px;height:38px;stroke:var(--icon);fill:none;stroke-width:1.6}
 .cv strong{font-family:var(--ft);display:block}
 form{display:grid;gap:1rem;max-width:620px}
 label{font:400 .95rem var(--ft);display:block;margin-bottom:.25rem}
-input,textarea{letter-spacing:inherit;width:100%;font:inherit;padding:.7rem .9rem;border:2px solid var(--icon);border-radius:10px;background:#fff;color:var(--dark)}
+input,textarea{letter-spacing:inherit;width:100%;font:inherit;padding:.7rem .9rem;border:2px solid var(--icon);border-radius:10px;background:#0d2a33;color:#fff}
 input:focus,textarea:focus{border-color:var(--light)}
 .hp{position:absolute;left:-9999px}
-footer{background:var(--dark);color:var(--grey);text-align:center;padding:2.2rem 1rem;font-size:.95rem}
+footer{background:#0d2a33;color:var(--grey);text-align:center;padding:2.2rem 1rem;font-size:.95rem}
 footer a{color:#fff}
-@media (max-width:700px){.herogrid{grid-template-columns:1fr}.photo{order:-1;width:150px;margin:0 0 1rem}.two,.cvs{grid-template-columns:1fr}.nav ul{display:none}.hero{padding-top:3rem}}
+@media (max-width:700px){.photo{width:160px}.about,.two,.cvs{grid-template-columns:1fr}.nav ul{display:none}.hero{padding-top:3rem}}
 </style>
 </head>
 <body>
@@ -77,7 +77,7 @@ footer a{color:#fff}
   <a href="#accueil"><img src="assets/logo.png" alt="Anaïs Logerais"></a>
   <nav aria-label="Navigation principale"><ul>
     <li><a href="#apropos">À propos</a></li><li><a href="#parcours">Parcours</a></li>
-    <li><a href="#competences">Compétences</a></li><li><a href="#cv">CV</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#competences">Compétences</a></li><li><a href="#cv">CV</a></li><li><a href="#sites">Mes sites</a></li><li><a href="#contact">Contact</a></li>
   </ul></nav>
   <a class="lang" href="en.html" hreflang="en" lang="en">EN</a>
 </div></header>
@@ -85,34 +85,47 @@ footer a{color:#fff}
 <main>
 <div class="hero" id="accueil"><div class="wrap herogrid"><div>
   <h1>Anaïs Logerais</h1>
-  <p class="role">Étudiante infirmière · [x]ème année · [Nom de l'IFSI]</p>
-  <p>Je me forme au soin avec rigueur et attention, pour accompagner chaque patient avec écoute et <span class="hl">professionnalisme</span>.</p>
+  <p class="role">Étudiante en soins infirmiers · IFSI du CRIP · Montpellier</p>
+  <p>Ancienne ambulancière diplômée d’État, je me forme au soin avec rigueur et écoute, pour prendre en charge chaque patient avec <span class="hl">professionnalisme</span>.</p>
   <div class="btns">
     <a class="btn" href="#contact">Me contacter</a>
     <a class="btn ghost" href="#cv">Télécharger mon CV</a>
   </div></div>
-  <img class="photo" src="assets/photo.png" alt="Portrait d'Anaïs Logerais" width="220" height="220">
   </div>
   <svg class="ecg" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 55 H380 L410 55 L430 20 L455 80 L480 10 L505 55 H1200"/></svg>
 </div>
 
-<section id="apropos"><div class="wrap two">
+<section id="apropos"><div class="wrap about">
+  <img class="photo" src="assets/photo.png" alt="Portrait d'Anaïs Logerais" width="220" height="220">
   <div><h2>À propos</h2>
-  <p>Je m'appelle Anaïs, étudiante en <span class="hl">soins infirmiers</span>. [Écris ici 3 à 4 phrases : ce qui t'a menée vers le métier d'infirmière, tes valeurs, ce que tu aimes dans le soin.]</p></div>
+  <p>Je m’appelle Anaïs, étudiante en <span class="hl">soins infirmiers</span> à l’IFSI du CRIP de Castelnau-le-Lez. Après plusieurs années comme ambulancière D.E. au CHU de Montpellier, je poursuis ma formation pour prendre en soin des patients en situation stable comme critique, en équipe, avec écoute, adaptation et sang-froid.</p></div>
   <div><h3>Ce que je recherche</h3>
-  <p>[Stage, alternance, premier poste… précise le type de service, la période et la zone géographique.]</p></div>
+  <p>Des stages et opportunités en soins infirmiers, à Montpellier et dans l’Hérault. N’hésitez pas à me contacter pour échanger.</p>
+  <p><strong>Actuellement en stage n°3</strong> (3ᵉ semestre) : soins psychiatriques au Service Post-Urgences Psychiatriques de Lapeyronie, CHU de Montpellier.</p>
+  <p><strong>À venir :</strong> stage n°4 – je complèterai.</p>
+  <p><strong>À venir :</strong> stage n°5 – je complèterai.</p>
+  <p><strong>À venir :</strong> stage n°6 – je complèterai.</p>
+  <p><strong>À venir :</strong> stage n°7 – je complèterai.</p></div>
 </div></section>
 
 <section id="parcours" class="alt"><div class="wrap">
   <h2>Parcours</h2>
   <div class="two">
-    <div><h3>Formation</h3><div class="timeline">
-      <article><small>[2024 – 2027]</small><h3>Diplôme d'État d'infirmier</h3><p>[Nom de l'IFSI, ville]</p></article>
-      <article><small>[Année]</small><h3>Baccalauréat [série]</h3><p>[Lycée, ville]</p></article>
+    <div><h3>Formations</h3><div class="timeline">
+      <article><small>2025 – en cours</small><h3>Diplôme d’État d’infirmier</h3><p>IFSI du CRIP, Castelnau-le-Lez (34)</p></article>
+      <article><small>2025</small><h3>Dispositif Orient’Santé</h3><p>CRIP, Castelnau-le-Lez (34)</p></article>
+      <article><small>2024</small><h3>Recyclage AFGSU 2</h3><p>CESU 34, Montpellier (34)</p></article>
+      <article><small>2023</small><h3>Exercice terrain réserviste</h3><p>Réserve Sanitaire, Le Mans (72)</p></article>
+      <article><small>2021</small><h3>Diplôme d’État d’ambulancier</h3><p>IFA du CHU, Montpellier (34)</p></article>
+      <article><small>2003 – 2004</small><h3>Bac Pro Vente-Négociation, mention Bien</h3><p>Cholet (49)</p></article>
     </div></div>
-    <div><h3>Stages</h3><div class="timeline">
-      <article><small>[Semestre 1 · 5 semaines]</small><h3>[Service, établissement]</h3><p>[Missions et soins réalisés]</p></article>
-      <article><small>[Semestre 2 · 10 semaines]</small><h3>[Service, établissement]</h3><p>[Missions et soins réalisés]</p></article>
+    <div><h3>Expériences</h3><div class="timeline">
+      <article><small>2026 · 10 semaines</small><h3>Stage de 1ʳᵉ année IDE</h3><p>USIC – USIP ADV, CHU de Montpellier (34)</p></article>
+      <article><small>2025 · 5 semaines</small><h3>Stage de 1ʳᵉ année IDE</h3><p>SMR, Clinique Le Mélézet, Montpellier (34)</p></article>
+      <article><small>2025 · 6 semaines</small><h3>Observation des métiers IDE, AS et paramédicaux</h3><p>MPEA du CHU de Montpellier, Ehpad</p></article>
+      <article><small>2020 – 2024</small><h3>Ambulancière D.E. et auxiliaire</h3><p>VSL, TPMR, brancardage · Doublet, Lunel, CHU de Montpellier, Arc-en-ciel</p></article>
+      <article><small>2020 · 3 semaines</small><h3>Stage ambulancier au SMUR</h3><p>Brancardage néonatalité depuis la zone hélicoptère, CHU de Montpellier</p></article>
+      <article><small>2023</small><h3>Bénévole</h3><p>Dispositif Écoute (CDC Montpellier) et support numérique pour personnes polyhandicapées</p></article>
     </div></div>
   </div>
 </div></section>
@@ -120,9 +133,13 @@ footer a{color:#fff}
 <section id="competences"><div class="wrap two">
   <div><h2>Compétences</h2>
   <h3>Soins</h3>
-  <ul class="chips"><li>[Prise de constantes]</li><li>[Pansements]</li><li>[Injections]</li><li>[Toilette et confort]</li></ul></div>
-  <div><h3 style="margin-top:3.2rem">Savoir-être et langues</h3>
-  <ul class="chips v"><li>Écoute</li><li>Travail en équipe</li><li>Rigueur</li><li>Français</li><li>Anglais [niveau]</li></ul></div>
+  <ul class="chips"><li>Prise en soin en situation stable et critique</li><li>Travail en équipe pluridisciplinaire</li><li>Surveillance de l’état des patients</li><li>Transmissions et plans de soins</li><li>Identitovigilance</li><li>Hygiène et postures</li><li>AFGSU 2</li></ul>
+  <h3 style="margin-top:1.8rem">Langues et outils</h3>
+  <ul class="chips v"><li>Anglais (courant)</li><li>Jordanien (débutant)</li><li>Google Suite</li><li>Microsoft Office</li><li>Kanban</li><li>Canva</li><li>GitHub</li><li>IA</li></ul></div>
+  <div><h3 style="margin-top:3.2rem">Qualités</h3>
+  <ul class="chips"><li>Écoute et empathie</li><li>Adaptation, sang-froid</li><li>Esprit d’équipe</li><li>Discrétion et sens du service public</li></ul>
+  <h3 style="margin-top:1.8rem">Intérêts</h3>
+  <ul class="chips v"><li>Sciences humaines</li><li>Podcasts</li><li>Cinéma</li><li>Voyages</li><li>Nouvelles technologies</li></ul></div>
 </div></section>
 
 <section id="cv" class="alt"><div class="wrap">
@@ -138,7 +155,26 @@ footer a{color:#fff}
   </div>
 </div></section>
 
-<section id="contact"><div class="wrap">
+<section id="sites"><div class="wrap">
+  <h2>Mes autres sites</h2>
+  <p>Mes outils et projets en ligne, pensés pour ma formation et mon quotidien.</p>
+  <div class="cvs">
+    <a class="cv" href="https://alifsicrip.github.io/cours/index.html" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6 M20 4l-9 9 M18 14v6H4V6h6"/></svg>
+      <span><strong>Cours de l’IFSI</strong>Mes cours de formation infirmière classés par unités d’enseignement (UE1 à UE6), avec un vocabulaire.</span></a>
+    <a class="cv" href="https://alifsicrip.github.io/checklist/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6 M20 4l-9 9 M18 14v6H4V6h6"/></svg>
+      <span><strong>Suivi de compétences</strong>Mon suivi des actes et activités infirmières par stage, avec graphiques de progression et synthèse PDF.</span></a>
+    <a class="cv" href="https://anaislog.github.io/mes-priorites/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6 M20 4l-9 9 M18 14v6H4V6h6"/></svg>
+      <span><strong>Mes priorités</strong>Un outil pour organiser mes tâches avec la matrice d’Eisenhower (urgent / important).</span></a>
+    <a class="cv" href="https://anaislog.github.io/SMUR/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 4h6v6 M20 4l-9 9 M18 14v6H4V6h6"/></svg>
+      <span><strong>Mon aventure</strong>Un carnet de bord ludique avec un personnage LEGO, l’humeur du jour et un historique.</span></a>
+  </div>
+</div></section>
+
+<section id="contact" class="alt"><div class="wrap">
   <h2>Contact</h2>
   <p>Un message, une proposition de <span class="hl">stage</span> ? Écrivez-moi, je réponds rapidement.</p>
   <form action="https://formspree.io/f/VOTRE_ID_FORMSPREE" method="POST">
